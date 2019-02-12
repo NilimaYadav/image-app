@@ -1,0 +1,7 @@
+<h1> view posts here</h1>
+{{outlet}}
+{{#each model as |photos|}}
+<h2>{{photos.title}}</h2>
+<p>{{photos.url}}</p>
+<p>{{photos.thumbnailUrl}}</p>
+{{/each}}

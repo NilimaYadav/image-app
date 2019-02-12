@@ -1,0 +1,19 @@
+<h1> view posts here</h1>
+
+{{#each model as |photos|}}
+<div class="col-sm-4">
+	<div class="panel panel-default photo-item">
+		<div class="panel-heading">
+			<h3 class="panel-title">{{photos.title}}</h3>
+		</div>
+		<div class="panel-body">
+			<p>{{#link-to 'image'}}View image{{/link-to}}</p>
+<p><img src="{{photos.thumbnailUrl}}"></p>
+		</div>
+
+		</div>
+</div>
+
+
+{{/each}}
+{{outlet}}
